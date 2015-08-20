@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eliclib Presentation</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="js/reveal.js/css/reveal.css">
+
+  <link rel="stylesheet" href="js/reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="css/typeplate.css">
+  <link rel="stylesheet" href="css/eliclib.css">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="js/reveal.js/lib/css/zenburn.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class="black-box" data-background="img/img2.jpg">
+        <h3>Library System Development Implementing Integrated Book Circulation for Interlibrary Loan</h3>
+        <p class="small-text">
+          Supervisor : Yen Lina Prasetio, S.Kom., M.CompSc. <br/>
+          Author : Willy, S.Kom | Elisabeth Oktaviani, S.Kom | Cinthya Dwi Lindy, S.Kom
+        </p>
+      </section>
+      <section>
+        <p>
+          I want to loan a book<br/><span class="fragment">But...</span><br/>
+          <span class="fragment">My library has no available collection of that book!</span>
+          <aside class="notes">
+            Let's start with a simple statement ...
+          </aside>
+        </section>
+        <section data-transition="zoom">
+          <h2>
+            So...
+          </h2>
+          <p>
+            <span class="fragment">I search another library, but...</span>
+            <span class="fragment">they only loan the book to their own organization or institution members</span>
+            <br/>
+            <br/>
+            <br/>
+            <span class="small-text fragment">
+              You might be only able to read the collection in place or worst you are not allowed to access the collection
+            </span>
+          </p>
+        </section>
+        <section>
+          <h2>Solution</h2>
+          <p>Make networks of libraries so that the member of a library can access another library&apos;s collection.</p>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js/lib/js/head.min.js"></script>
+    <script src="js/reveal.js/js/reveal.js"></script>
+
+    <script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [
+      { src: 'js/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'js/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'js/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'js/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'js/reveal.js/plugin/zoom-js/zoom.js', async: true },
+      { src: 'js/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+
+  </script>
+
+</body>
+</html>

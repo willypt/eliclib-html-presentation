@@ -1,0 +1,11 @@
+.black-box {
+  background: rgba(000,000,000,0.8);
+}
+
+.reveal .backgrounds {
+  opacity: 0.2;
+}
+
+.reveal .small-text {
+  font-size: 0.7em
+}
