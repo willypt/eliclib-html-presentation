@@ -9,3 +9,17 @@
 .reveal .small-text {
   font-size: 0.7em
 }
+
+.reveal section img {
+	border : none;
+	background: none;
+	text-align: center;
+}
+
+.reveal table td {
+	text-align: center;
+}
+
+#features td {
+	vertical-align: middle;
+}

@@ -9,9 +9,11 @@
 
   <link rel="stylesheet" href="js/reveal.js/css/reveal.css">
 
-  <link rel="stylesheet" href="js/reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="js/reveal.js/css/theme/sky.css" id="theme">
   <link rel="stylesheet" href="css/typeplate.css">
   <link rel="stylesheet" href="css/eliclib.css">
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 
   <!-- Code syntax highlighting -->
   <link rel="stylesheet" href="js/reveal.js/lib/css/zenburn.css">
@@ -19,7 +21,7 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <section class="black-box" data-background="img/img2.jpg">
+      <section data-background="img/img2.jpg">
         <h3>Library System Development Implementing Integrated Book Circulation for Interlibrary Loan</h3>
         <p class="small-text">
           Supervisor : Yen Lina Prasetio, S.Kom., M.CompSc. <br/>
@@ -49,9 +51,141 @@
             </span>
           </p>
         </section>
-        <section>
+        <section data-background="img/img2.jpg">
           <h2>Solution</h2>
           <p>Make networks of libraries so that the member of a library can access another library&apos;s collection.</p>
+
+          <aside class="notes">
+            We'll delve into the solution later.
+          </aside>
+        </section>
+        <section>
+          <h2>Introduction</h2>
+          <p>
+          <table border=0>
+            <tr>
+              <td><i class="fragment fa fa-chrome fa-4x"></i></td>
+              <td><i class="fragment fa fa-book fa-4x"></i></td>
+              <td><i class="fragment fa fa-sitemap  fa-4x"></i></td>
+              <td><i class="fragment fa fa-thumbs-o-down fa-2x"><i class="fragment fa fa-book fa-3x"></i></td>
+            </tr>
+          </table>
+          </p>
+          <aside class="notes">
+            <ul>
+              <li>Web 2.0 emphasize on user online experience.</li>
+              <li>Library 2.0 focus on user centered services. User can interact with library virtually or physicaaly but slowly deteriorates because of declining budget and complex system</li>
+              <li>Because of prblem above, need effective technology aid to manage circulation flow</li>
+              <li>And Wang mentioned that ILS is really affected by Web Dev to dev an integrated system.The main challenges of ILS itself are static and outdated interfaces, not scalable, and not user friendly.
+              <li>last but not least , lack of collection is a big problem on smaller libraries, making their appeal less interesting on libray users
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h2>Problems</h2>
+          <h4>how to...?</h4>
+          <p>
+            <ol>
+              <li>Integrate book circulation system on certain territory</li>
+              <li>Implement easy to use and to understand online book procurement flow</li>
+            </ol>
+          </p>
+        </section>
+        <section>
+          <h2>Purpose</h2>
+          <p>
+            <ol>
+              <li>Develop web-based integrated library circulation software</li>
+              <li>Building a library system to facilitate an automated interlibrary-loan</li>
+              <li>Designing and implement good interface</li>
+              <li>Develop an integrated payment system</li>
+            </ol>
+          </p>
+        </section>
+        <section>
+          <h2>Solution</h2>
+          <p>
+            <img src="img/logo_eliclib.png" height="400px"/>
+          </p>
+        </section>
+        <section>
+          <h2>Features</h2>
+          <p>
+            <table border=0 id="features">
+              <tr class="fragment">
+                <td><img src="img/gl-search.png" /></td>
+                <td>OPAC</td>
+              </tr>
+              <tr class="fragment">
+                <td><img src="img/gl-group.png" /></td>
+                <td>User Management</td>
+              </tr>
+              <tr class="fragment">
+                <td><img src="img/gl-book-open.png" /></td>
+                <td>Book Management</td>
+              </tr>
+              <tr class="fragment">
+                <td><img src="img/gl-book.png" /></td>
+                <td>Procurement</td>
+              </tr>
+              <tr class="fragment">
+                <td><img src="img/gl-star.png" /></td>
+                <td>Review and Rating</td>
+              </tr>
+              <tr class="fragment">
+                <td><img src="img/gl-refresh.png" /></td>
+                <td>Integrated Circulation</td>
+              </tr>
+            </table>
+          </p>
+        </section>
+        <section>
+          <h2>Suggested Library System</h2>
+          <p>
+            <ul class="fragment">
+              <li>Intra-Library System</li>
+              <li>Inter-Library System</li>
+            </ul>
+          </p>
+        </section>
+        <section>
+          <h2>Intra-Library System</h2>
+          <p>
+            <ul>
+              <li class="fragment">Consists of transactions done on inside library</li>
+              <li class="fragment">Selective book info syncing to server (Only downloads needed book information based on owned collection)
+            </ul>
+          </p>
+        </section>
+        <section>
+          <p>
+            <img src="img/intra.png" height="500px"/>
+          </p>
+        </section>
+        <section>
+          <h2>Inter-Library System</h2>
+          <p>
+            <ul>
+              <li class="fragment">Only consists of API that facilitates inter-library transactions</li>
+              <li class="fragment">Has full information on libraries' collections availability</li>
+              <li class="fragment">Has full information on book on the database</li>
+              <li class="fragment">Hosts optional features such as email notifications from application</li>
+            </ul>
+          </p>
+        </section>
+        <section>
+          <p>
+            <img src="img/inter.png"  height="500px"/>
+          </p>
+        </section>
+        <section>
+          <h2>Why distributed system? Why not centralized server?</h2>
+          <p>
+            <ul>
+              <li>If centralized and there are connection problems on main server, all application will be inaccesible</li>
+              <li>Easy to scalable on both Intra and Inter-Libraries client and server side</li>
+            <ul>
+          </p>
         </section>
       </div>
     </div>
